@@ -14,4 +14,395 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/weather00"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather02"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather04"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather06"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather08"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather10"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather12"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather14"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather16"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather18"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather20"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather22"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvWeat12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgWeat12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/weathe" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
