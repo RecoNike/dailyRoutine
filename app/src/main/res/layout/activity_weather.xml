@@ -4,20 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".WeatherActivity">
 
     <TextView
-        android:id="@+id/tvResponse"
+        android:id="@+id/tvCityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
         android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +38,7 @@
             <LinearLayout
                 android:id="@+id/weather00"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -50,21 +55,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather02"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -81,21 +77,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather04"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -112,21 +99,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather06"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -143,21 +121,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather08"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -174,21 +143,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather10"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -205,21 +165,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat6"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather12"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -236,21 +187,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat7"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather14"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -267,21 +209,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat8"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather16"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -298,21 +231,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat9"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather18"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -329,21 +253,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat10"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather20"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -360,21 +275,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat11"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/weather22"
                 android:layout_width="120dp"
-                android:layout_height="280dp"
+                android:layout_height="180dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/custom_edittext"
                 android:orientation="vertical"
@@ -391,18 +297,126 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imgWeat12"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/weathe" />
             </LinearLayout>
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rainImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rain" />
+
+            <TextView
+                android:id="@+id/tvRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baloo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/snowImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/snowflake" />
+
+            <TextView
+                android:id="@+id/tvSnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baloo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/baroImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/thermometer" />
+
+            <TextView
+                android:id="@+id/tvBaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baloo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/windImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/wind" />
+
+            <TextView
+                android:id="@+id/tvWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baloo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCityName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

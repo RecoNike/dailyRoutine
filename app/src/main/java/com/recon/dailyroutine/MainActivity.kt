@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
 import com.recon.dailyroutine.AdditionalClasses.VolleyRequest
@@ -18,6 +19,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        WindowCompat.setDecorFitsSystemWindows(
+            window,
+            false
+        )
+
         tvCity = findViewById(R.id.TVCity)
         tvCurrentTemp = findViewById(R.id.TVCurrentTemp)
         val savedData = SharedPrefs(this)

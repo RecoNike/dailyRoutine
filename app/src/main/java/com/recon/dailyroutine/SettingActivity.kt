@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
 
 
@@ -19,6 +20,12 @@ class SettingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
+
+        WindowCompat.setDecorFitsSystemWindows(
+            window,
+            false
+        )
+
         //UI elements
         letsgoBtn = findViewById(R.id.letsgoBtn)
         cityNameField = findViewById(R.id.cityNameField)

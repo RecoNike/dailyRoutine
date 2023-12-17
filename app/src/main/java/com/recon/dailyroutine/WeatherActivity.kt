@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
@@ -16,7 +17,6 @@ import java.util.Date
 import java.util.Locale
 
 class WeatherActivity : AppCompatActivity() {
-    lateinit var testTV: TextView
     lateinit var text1: TextView
     lateinit var text2: TextView
     lateinit var text3: TextView
@@ -29,12 +29,23 @@ class WeatherActivity : AppCompatActivity() {
     lateinit var text10: TextView
     lateinit var text11: TextView
     lateinit var text12: TextView
-
+    lateinit var rainText: TextView
+    lateinit var snowText: TextView
+    lateinit var baroText: TextView
+    lateinit var windText: TextView
+    lateinit var cityName: TextView
+    lateinit var currentT: TextView
 
     val APIKEY = "2392c107c09f422d8f8141306231108"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
+
+        WindowCompat.setDecorFitsSystemWindows(
+            window,
+            false
+        )
+
         init()
 
         //Shared preferences
@@ -76,6 +87,12 @@ class WeatherActivity : AppCompatActivity() {
         Log.d("WeatherInfo", "Humidity: ${weatherData.current.humidity}%")
         Log.d("WeatherInfo", "Cloud: ${weatherData.current.cloud}%")
         Log.d("WeatherInfo", "Feels Like: ${weatherData.current.feelsLikeC}°C")
+        currentT.text = "${weatherData.current.tempC} °C"
+        cityName.text = "${weatherData.location.name}"
+        baroText.text = "${weatherData.current.pressureMb} Mb"
+        windText.text = "${weatherData.current.windMph} m/h"
+
+
 
 
         val currentDate = Date()
@@ -87,18 +104,44 @@ class WeatherActivity : AppCompatActivity() {
         targetForecastDay?.let { forecastDay ->
             for (hour in forecastDay.hour) {
                 when(hour.time){
-                    targetDate.toString() + " 00:00" -> text1.text = "00:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 02:00" -> text2.text = "02:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 04:00" -> text3.text = "04:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 06:00" -> text4.text = "06:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 08:00" -> text5.text = "08:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 10:00" -> text6.text = "10:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 12:00" -> text7.text = "12:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 14:00" -> text8.text = "14:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 16:00" -> text9.text = "16:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 18:00" -> text10.text = "18:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 20:00" -> text11.text = "20:00\n${hour.tempC}°C\n${hour.condition.text}"
-                    targetDate.toString() + " 22:00" -> text12.text = "22:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    "$targetDate 00:00" -> {
+                        text1.text = "00:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 02:00" -> {
+                        text2.text = "02:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 04:00" -> {
+                        text3.text = "04:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 06:00" -> {
+                        text4.text = "06:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 08:00" -> {
+                        text5.text = "08:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 10:00" -> {
+                        text6.text = "10:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 12:00" -> {
+                        text7.text = "12:00\n${hour.tempC}°C\n${hour.condition.text}"
+                        rainText.text = "${hour.chanceOfRain} %"
+                        snowText.text = "${hour.chanceOfSnow} %"
+                    }
+                    "$targetDate 14:00" -> {
+                        text8.text = "14:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 16:00" -> {
+                        text9.text = "16:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 18:00" -> {
+                        text10.text = "18:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 20:00" -> {
+                        text11.text = "20:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
+                    "$targetDate 22:00" -> {
+                        text12.text = "22:00\n${hour.tempC}°C\n${hour.condition.text}"
+                    }
                 }
                 Log.e("BIBAA",hour.toString())
                 Log.i("HourlyForecast", "Time: ${hour.time}")
@@ -112,7 +155,7 @@ class WeatherActivity : AppCompatActivity() {
         } ?: Log.d("HourlyForecast", "No forecast data available for $targetDate")
     }
     private fun init(){
-        testTV = findViewById(R.id.tvResponse)
+        cityName = findViewById(R.id.tvCityName)
         text1 = findViewById(R.id.tvWeat1)
         text2 = findViewById(R.id.tvWeat2)
         text3 = findViewById(R.id.tvWeat3)
@@ -125,5 +168,10 @@ class WeatherActivity : AppCompatActivity() {
         text10 = findViewById(R.id.tvWeat10)
         text11 = findViewById(R.id.tvWeat11)
         text12 = findViewById(R.id.tvWeat12)
+        rainText = findViewById(R.id.tvRain)
+        snowText = findViewById(R.id.tvSnow)
+        baroText = findViewById(R.id.tvBaro)
+        windText = findViewById(R.id.tvWind)
+        currentT = findViewById(R.id.tvCurrentTemp)
     }
 }
