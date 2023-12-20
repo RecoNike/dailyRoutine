@@ -3,7 +3,6 @@ package com.recon.dailyroutine.AdditionalClasses
 import android.content.Context
 import com.android.volley.Request
 import com.android.volley.RequestQueue
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.coroutines.Dispatchers
@@ -24,11 +23,11 @@ class VolleyRequest(private val context: Context) {
             // Создаем запрос JsonObjectRequest
             val jsonObjectRequest = JsonObjectRequest(
                 Request.Method.GET, url, null,
-                Response.Listener { response ->
+                { response ->
                     // Вызываем колбэк при успешном получении JSON
                     continuation.resume(response)
                 },
-                Response.ErrorListener { error ->
+                { error ->
                     // Вызываем колбэк при ошибке
                     continuation.resumeWithException(Exception(error.message))
                 }

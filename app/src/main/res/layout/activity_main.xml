@@ -7,9 +7,39 @@
     android:background="@drawable/background_1"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/newsBtn"
+        android:layout_width="371dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_edittext"
+        android:elevation="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="News"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherBtn" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="371dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_edittext"
+        android:elevation="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Currency"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsBtn" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="120dp"
         android:orientation="horizontal"
         android:weightSum="2"
@@ -91,34 +121,28 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/baloo"
         android:text="“Be yourself; everyone else is already taken.”  Oscar Wilde"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
+        android:id="@+id/weatherBtn"
+        android:layout_width="371dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/custom_edittext"
         android:elevation="10dp"
+        android:fontFamily="@font/baloo"
         android:text="Weather"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 </androidx.constraintlayout.widget.ConstraintLayout>

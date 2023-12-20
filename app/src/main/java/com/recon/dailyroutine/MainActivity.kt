@@ -36,10 +36,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        val testBtn: Button = findViewById(R.id.button)
-        testBtn.setOnClickListener {
-            val tst: Intent = Intent(this, WeatherActivity::class.java)
-            startActivity(tst)
+        //WEATHER Button
+        val weatherButton: Button = findViewById(R.id.weatherBtn)
+        weatherButton.setOnClickListener {
+            val weather: Intent = Intent(this, WeatherActivity::class.java)
+            startActivity(weather)
+        }
+
+        //NEWS Button
+        val newsButton: Button = findViewById(R.id.newsBtn)
+        newsButton.setOnClickListener {
+            val news: Intent = Intent(this, NewsActivity::class.java)
+            startActivity(news)
         }
 
             val volleyRequest = VolleyRequest(this)
