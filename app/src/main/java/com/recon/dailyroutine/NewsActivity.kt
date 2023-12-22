@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -65,7 +67,7 @@ class NewsActivity : AppCompatActivity() {
         val token = "5rUgf9YPodT9QbKzA2I6Z5DY1PSXogoiRiJqh8ga"
         val url = "https://api.thenewsapi.com/v1/news/all?" +
                 "api_token=$token" +
-                "&search=${savedData.loadData("interests","tech")}" +
+                "&search=${savedData.loadData("interests","tech").replace(',' , '|')}" +
                 "&language=en" +
                 "&published_after=${getOneWeekAgoDate()}"
 
@@ -148,6 +150,7 @@ class NewsActivity : AppCompatActivity() {
          image1 = findViewById(R.id.newsImg1)
          image2 = findViewById(R.id.newsImg2)
          image3 = findViewById(R.id.newsImg3)
+        Toast.makeText(this,"Swipe for refresh",LENGTH_SHORT).show()
     }
     private fun parseJson(jsonString: String): NewsResponse? {
         return try {

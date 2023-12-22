@@ -40,7 +40,7 @@ class SettingActivity : AppCompatActivity() {
             if (interestField.text.toString() != "" && cityNameField.text.toString() != ""){
                 //Saving data for using inDaApp
                 savedData.saveData("init", "true")
-                savedData.saveData("currency", spinnerCurren.getSelectedItem().toString())
+                savedData.saveData("currency", spinnerCurren.selectedItem.toString())
                 savedData.saveData("city", cityNameField.text.toString())
                 savedData.saveData("interests", interestField.text.toString())
 
