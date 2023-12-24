@@ -46,6 +46,7 @@ class SettingActivity : AppCompatActivity() {
 
                 val i : Intent = Intent(this,MainActivity::class.java)
                 startActivity(i)
+                finish()
             }
             else
                 Toast.makeText(this, "You have empty fields", Toast.LENGTH_SHORT).show()

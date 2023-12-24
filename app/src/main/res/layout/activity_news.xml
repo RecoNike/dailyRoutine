@@ -3,130 +3,149 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewsActivity"
-    android:id="@+id/mainLayout">
+    android:background="#D9C7B8"
+    tools:context=".NewsActivity">
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_weight=".3"
-            android:background="@drawable/custom_edittext"
-            android:orientation="vertical"
-            android:padding="2dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/titleTv1"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="@font/baloo"
-                android:text="TextView"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/descripTv1"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="TextView" />
-
-            <ImageView
-                android:id="@+id/newsImg1"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="false"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/newspaper" />
-        </LinearLayout>
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_weight=".3"
-            android:background="@drawable/custom_edittext"
-            android:orientation="vertical"
-            android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:weightSum="1">
 
-            <TextView
-                android:id="@+id/titleTv2"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="@font/baloo"
-                android:text="TextView"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/titleTv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.3"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/descripTv2"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="TextView" />
+                    <TextView
+                        android:id="@+id/descripTv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.3"
+                        android:text="TextView" />
 
-            <ImageView
-                android:id="@+id/newsImg2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="false"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/newspaper" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/newsImg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/newspaper" />
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_weight=".3"
-            android:background="@drawable/custom_edittext"
-            android:orientation="vertical"
-            android:padding="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:weightSum="1">
 
-            <TextView
-                android:id="@+id/titleTv3"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="@font/baloo"
-                android:text="TextView"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/titleTv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/descripTv3"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="TextView" />
+                    <TextView
+                        android:id="@+id/descripTv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="TextView" />
 
-            <ImageView
-                android:id="@+id/newsImg3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="false"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/newspaper" />
-        </LinearLayout>
-    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/newsImg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/newspaper" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/titleTv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/descripTv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="TextView" />
+
+                    <ImageView
+                        android:id="@+id/newsImg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/newspaper" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

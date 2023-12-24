@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -48,6 +49,19 @@ class MainActivity : AppCompatActivity() {
         newsButton.setOnClickListener {
             val news: Intent = Intent(this, NewsActivity::class.java)
             startActivity(news)
+        }
+        //BRAIN button
+        val brainButton: Button = findViewById(R.id.startBrainBtn)
+        brainButton.setOnClickListener {
+            val brain: Intent = Intent(this, StartBrainActivity::class.java)
+            startActivity(brain)
+        }
+
+        //SETTINGS Button
+        val settingsBtn: ImageView = findViewById(R.id.settingsImg)
+        settingsBtn.setOnClickListener {
+            val set: Intent = Intent(this, SettingActivity::class.java)
+            startActivity(set)
         }
 
             val volleyRequest = VolleyRequest(this)

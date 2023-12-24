@@ -2,7 +2,10 @@ package com.recon.dailyroutine
 
 import WeatherData
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
+import android.view.ViewTreeObserver
+import android.widget.HorizontalScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -47,6 +50,18 @@ class WeatherActivity : AppCompatActivity() {
         )
 
         init()
+        val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView)
+
+        val handler = Handler()
+        handler.postDelayed({
+        horizontalScrollView.viewTreeObserver.addOnPreDrawListener(object : ViewTreeObserver.OnPreDrawListener {
+            override fun onPreDraw(): Boolean {
+                horizontalScrollView.viewTreeObserver.removeOnPreDrawListener(this)
+                horizontalScrollView.smoothScrollTo(2000, 0)
+                return true
+            }
+        })
+        }, 80)
 
         //Shared preferences
         val savedData = SharedPrefs(this)

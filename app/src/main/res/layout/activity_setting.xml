@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_1"
+    android:background="#D9C7B8"
     tools:context=".SettingActivity">
 
     <TextView
@@ -65,11 +65,12 @@
         app:layout_constraintTop_toBottomOf="@+id/currencySpinner" />
 
     <Spinner
-        android:entries="@array/currencies"
         android:id="@+id/currencySpinner"
         android:layout_width="142dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
+        android:elevation="5dp"
+        android:entries="@array/currencies"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -139,8 +140,8 @@
         android:layout_width="310dp"
         android:layout_height="80dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_start"
-        android:backgroundTint="#41BFB3"
+        android:background="#73321A"
+        android:backgroundTint="#73321A"
         android:fontFamily="@font/baloo"
         android:text="LET`S GO"
         android:textColor="@color/black"
