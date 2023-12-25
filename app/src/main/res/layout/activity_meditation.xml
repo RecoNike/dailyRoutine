@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeditationActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/energyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/lightning"
+                    android:fontFamily="@font/baloo"
+                    android:text="ENERGY"
+                    android:textColor="@color/black"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/relaxBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/relax"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="10dp"
+                    android:text="RELAX"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/baloo"
+                    android:text="SOON"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_weight=".33" />
+                <FrameLayout android:id="@+id/controllerAnchor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/baloo"
+        android:text="Choose your meditation goal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

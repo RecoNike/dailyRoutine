@@ -4,11 +4,15 @@
     android:padding="10dp"
     android:shape="rectangle" >
 
-    <solid android:color="#BF6836" />
+    <gradient
+    android:startColor="#589bff"
+    android:endColor="#86ddff"
+    android:type="linear"
+    android:angle="90"/>
 
     <stroke
         android:width="3dp"
-        android:color="#A68877" />
+        android:color="#C2DFFF" />
     <corners
         android:radius="10dp"
         />

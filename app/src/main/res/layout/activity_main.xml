@@ -7,44 +7,6 @@
     android:background="@color/BaseBGColor"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/newsBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/custom_edittext"
-        android:drawableStart="@drawable/newspaper"
-        android:drawablePadding="10dp"
-        android:drawingCacheQuality="auto"
-        android:elevation="10dp"
-        android:fontFamily="@font/baloo"
-        android:hapticFeedbackEnabled="true"
-        android:paddingHorizontal="5dp"
-        android:text="News"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/startBrainBtn"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toEndOf="@+id/weatherBtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <Button
-        android:id="@+id/startBrainBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/custom_edittext"
-        android:drawableStart="@drawable/human"
-        android:drawablePadding="10dp"
-        android:drawableTint="#E91E63"
-        android:elevation="10dp"
-        android:fontFamily="@font/baloo"
-        android:paddingHorizontal="5dp"
-        android:text="Start Brain"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
@@ -56,12 +18,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/weatherBlock"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#D9965B"
-            android:elevation="5dp"
+            android:background="@drawable/custom_edittext"
+            android:elevation="10dp"
             android:orientation="vertical"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
@@ -90,12 +53,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/currencyBlock"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#D9965B"
-            android:elevation="5dp"
+            android:background="@drawable/custom_edittext"
+            android:elevation="10dp"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="5dp"
@@ -140,32 +104,146 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <Button
-        android:id="@+id/weatherBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/custom_edittext"
-        android:drawableStart="@drawable/sun"
-        android:drawablePadding="10dp"
-        android:drawableTint="#FFC107"
-        android:elevation="10dp"
-        android:fontFamily="@font/baloo"
-        android:paddingHorizontal="5dp"
-        android:text="Weather"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
     <ImageView
         android:id="@+id/settingsImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="32dp"
-        android:background="@color/AdditColor2"
+        android:background="@drawable/custom_edittext"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/settings" />
+
+    <LinearLayout
+        android:id="@+id/ButtonsBlock"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/weatherBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/sun"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FFC107"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:paddingHorizontal="5dp"
+                android:text="Weather"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/meditationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/yoga"
+                android:drawablePadding="10dp"
+                android:drawableTint="@android:color/holo_purple"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:paddingHorizontal="10dp"
+                android:text="Meditation"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/newsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/newspaper"
+                android:drawablePadding="10dp"
+                android:drawingCacheQuality="auto"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:hapticFeedbackEnabled="true"
+                android:paddingHorizontal="5dp"
+                android:text="News"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:paddingHorizontal="10dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/startBrainBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/human"
+                android:drawablePadding="10dp"
+                android:drawableTint="#E91E63"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:paddingHorizontal="5dp"
+                android:text="Start Brain"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_edittext"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo"
+                android:paddingHorizontal="10dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

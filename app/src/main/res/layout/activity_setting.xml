@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9C7B8"
+    android:background="@color/BaseBGColor"
     tools:context=".SettingActivity">
 
     <TextView
@@ -69,6 +69,7 @@
         android:layout_width="142dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
         android:elevation="5dp"
         android:entries="@array/currencies"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,8 +141,7 @@
         android:layout_width="310dp"
         android:layout_height="80dp"
         android:layout_marginBottom="16dp"
-        android:background="#73321A"
-        android:backgroundTint="#73321A"
+        android:background="@drawable/custom_edittext"
         android:fontFamily="@font/baloo"
         android:text="LET`S GO"
         android:textColor="@color/black"

@@ -64,6 +64,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(set)
         }
 
+        //Meditation Activity
+        val meditatBtn: Button = findViewById(R.id.meditationBtn)
+        meditatBtn.setOnClickListener {
+            val med: Intent = Intent(this, MeditationActivity::class.java)
+            startActivity(med)
+        }
+
             val volleyRequest = VolleyRequest(this)
             val url = "https://api.weatherapi.com/v1/current.json?" +
                     "key=$APIKEY" +

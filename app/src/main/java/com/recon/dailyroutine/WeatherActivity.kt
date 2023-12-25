@@ -61,7 +61,7 @@ class WeatherActivity : AppCompatActivity() {
                 return true
             }
         })
-        }, 80)
+        }, 200)
 
         //Shared preferences
         val savedData = SharedPrefs(this)

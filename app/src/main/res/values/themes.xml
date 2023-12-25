@@ -1,13 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DailyRoutine" parent="Theme.Material3.DayNight.NoActionBar">
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/AdditColor</item>
+            <item name="colorPrimaryDark">@color/AdditColor2</item>
+            <item name="colorAccent">@color/BaseBGColor</item>
 
-    </style>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:windowFullscreen">true</item>
 
-    <style name="Theme.DailyRoutine" parent="Base.Theme.DailyRoutine" />
-    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
+            <!-- Add these -->
+            <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+            <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+            <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+        </style>
+
 </resources>
