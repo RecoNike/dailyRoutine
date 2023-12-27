@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:id="@+id/weatherBlock"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
 
         <LinearLayout
             android:id="@+id/currencyBlock"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
