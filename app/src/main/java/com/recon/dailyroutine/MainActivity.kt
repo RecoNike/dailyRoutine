@@ -11,9 +11,6 @@ import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
 import com.recon.dailyroutine.AdditionalClasses.VolleyRequest
-import com.recon.dailyroutine.DataBase.AppDatabase
-import com.recon.dailyroutine.DataBase.MoodEntry
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.json.JSONObject
 
@@ -25,16 +22,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val moodEntry = MoodEntry(7, "22.12.2023","sea")
-        val moodDao = AppDatabase.getDatabase(this@MainActivity).moodDao()
-
-        lifecycleScope.launch(Dispatchers.Main) {
-            moodDao.insertMoodEntry(moodEntry)
-        }
-        lifecycleScope.launch(Dispatchers.Main) {
-            val res = moodDao.getMoodEntriesForDate("22.12.2023")
-            println(res)
-        }
         WindowCompat.setDecorFitsSystemWindows(
             window,
             false

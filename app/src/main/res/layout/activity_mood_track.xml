@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
     tools:context=".MoodTrackActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/dayPickBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/Transparent"
+        android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendar" />
@@ -22,20 +24,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:elevation="10dp"
         android:fontFamily="@font/baloo"
-        android:text="TextView"
+        android:text="Set your morning mood"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/dayPickBtn" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginBottom="448dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,16 +51,65 @@
     <SeekBar
         android:id="@+id/seekBar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="@color/AdditColor"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_edittext"
+        android:elevation="10dp"
         android:max="10"
         android:progress="5"
         android:thumb="@drawable/hive"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+    <EditText
+        android:id="@+id/commentInput"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:alpha=".9"
+        android:background="@drawable/custom_edittext"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="start|top"
+        android:hint="Comment your morning (Optional)"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="@font/baloo"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="xx/xx/xxxx"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
