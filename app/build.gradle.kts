@@ -48,6 +48,7 @@ dependencies {
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.google.code.gson:gson:2.8.9")
     implementation("io.coil-kt:coil:1.4.0")
+    implementation("com.airbnb.android:lottie:6.2.0")
     implementation("androidx.browser:browser:1.7.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 

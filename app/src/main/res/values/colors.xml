@@ -9,5 +9,6 @@
     <color name="Gradient1.2">#86ddff</color>
     <color name="Gradient2.1">#ff9355</color>
     <color name="Gradient2.2">#ffde77</color>
+    <color name="Transparent">#00FFFFFF</color>
 
 </resources>

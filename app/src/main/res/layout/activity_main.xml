@@ -147,6 +147,7 @@
                 android:fontFamily="@font/baloo"
                 android:paddingHorizontal="5dp"
                 android:text="Weather"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <Button
@@ -191,19 +192,21 @@
                 android:hapticFeedbackEnabled="true"
                 android:paddingHorizontal="5dp"
                 android:text="News"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/moodBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight=".5"
                 android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/emoji"
                 android:elevation="5dp"
                 android:fontFamily="@font/baloo"
                 android:paddingHorizontal="10dp"
-                android:text="Button"
+                android:text="Mood"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -229,6 +232,7 @@
                 android:fontFamily="@font/baloo"
                 android:paddingHorizontal="5dp"
                 android:text="Start Brain"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <Button
