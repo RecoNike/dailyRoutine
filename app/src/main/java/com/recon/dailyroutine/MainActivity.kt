@@ -9,6 +9,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.snackbar.Snackbar
+import com.recon.dailyroutine.AdditionalClasses.NetworkChecker
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
 import com.recon.dailyroutine.AdditionalClasses.VolleyRequest
 import kotlinx.coroutines.launch
@@ -26,12 +28,15 @@ class MainActivity : AppCompatActivity() {
             window,
             false
         )
-
         tvCity = findViewById(R.id.TVCity)
         tvCurrentTemp = findViewById(R.id.TVCurrentTemp)
         val savedData = SharedPrefs(this)
         val APIKEY = "2392c107c09f422d8f8141306231108"
 
+        if(!NetworkChecker.isNetworkAvailable(this)){
+            Snackbar.make(tvCity, "This app needs an internet connection", Snackbar.LENGTH_SHORT)
+                .show()
+        }
 
         if (savedData.loadData("init","false") != "true") {
             val i: Intent = Intent(this, SettingActivity::class.java)

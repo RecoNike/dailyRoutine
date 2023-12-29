@@ -8,6 +8,8 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
+import com.google.android.material.snackbar.Snackbar
+import com.recon.dailyroutine.AdditionalClasses.NetworkChecker
 import com.recon.dailyroutine.AdditionalClasses.SharedPrefs
 
 
@@ -31,6 +33,11 @@ class SettingActivity : AppCompatActivity() {
         cityNameField = findViewById(R.id.cityNameField)
         interestField = findViewById(R.id.interestField)
         spinnerCurren = findViewById(R.id.currencySpinner)
+
+        if(!NetworkChecker.isNetworkAvailable(this)){
+            Snackbar.make(cityNameField, "This app needs an internet connection", Snackbar.LENGTH_SHORT)
+                .show()
+        }
 
         //Shared preferences
         val savedData = SharedPrefs(this)

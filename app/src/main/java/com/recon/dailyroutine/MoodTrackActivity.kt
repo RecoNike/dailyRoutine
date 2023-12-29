@@ -82,6 +82,8 @@ class MoodTrackActivity : AppCompatActivity() {
                     if (!res.isEmpty()){
                         seekMoodBar.progress = res[0].moodValue
                         commentField.setText(res[0].comment)
+                        Snackbar.make(dateTextView, "Data loaded", Snackbar.LENGTH_SHORT)
+                            .show()
                     } else {
                         seekMoodBar.progress = 5
                         commentField.setText("")
@@ -98,12 +100,11 @@ class MoodTrackActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener{
             moodEntry = MoodEntry(pickedMood, dateString, commentField.text.toString())
+
                 lifecycleScope.launch(Dispatchers.Main)
                 {
                     moodDao.insertMoodEntry(moodEntry)
                 }
-//            seekMoodBar.progress = 5
-//            commentField.setText("")
             Snackbar.make(saveButton, "Data Saved", Snackbar.LENGTH_SHORT)
                 .show()
         }
@@ -186,5 +187,8 @@ class MoodTrackActivity : AppCompatActivity() {
 
 
     }
+
+
+
 }
 

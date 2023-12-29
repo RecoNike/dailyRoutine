@@ -51,6 +51,8 @@ dependencies {
     implementation("com.airbnb.android:lottie:6.2.0")
     implementation("androidx.browser:browser:1.7.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation ("org.jsoup:jsoup:1.14.3")
+
 
 
     implementation("androidx.room:room-runtime:2.6.1")

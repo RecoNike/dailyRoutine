@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BaseBGColor"
+    android:background="@drawable/gradient_bg"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -96,7 +96,7 @@
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:fontFamily="@font/baloo"
+        android:fontFamily="@font/montserrat"
         android:text="“Be yourself; everyone else is already taken.”  Oscar Wilde"
         android:textColor="@color/black"
         android:textSize="16sp"

@@ -3,6 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="BaseBGColor">#FFFFFF</color>
+
+    <color name="maincolor">#0099CC</color>
+    <color name="aditcolor">#00CCFF</color>
+    <color name="accentcolor">#99CCFF</color>
+
     <color name="AdditColor">#BF6836</color>
     <color name="AdditColor2">#D9965B</color>
     <color name="Gradient1.1">#589bff</color>

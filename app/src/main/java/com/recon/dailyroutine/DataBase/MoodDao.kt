@@ -9,7 +9,7 @@ import androidx.room.Update
 
 @Dao
 interface MoodDao {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertMoodEntry(moodEntry: MoodEntry)
 
     @Query("SELECT * FROM mood_entries")
