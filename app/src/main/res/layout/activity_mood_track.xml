@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg"
+    android:background="@drawable/bg_emotions"
     tools:context=".MoodTrackActivity">
 
     <ImageButton
@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:background="@color/Transparent"
         android:elevation="10dp"
-        android:tint="@color/accentcolor"
+        android:tint="@color/BaseBGColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendar" />
@@ -28,8 +28,9 @@
         android:elevation="10dp"
         android:fontFamily="@font/montserrat"
         android:text="Set your morning mood"
-        android:textColor="@color/black"
+        android:textColor="@color/TextColor"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +80,7 @@
         android:hint="Comment your morning (Optional)"
         android:inputType="textMultiLine"
         android:padding="5dp"
-        android:textColor="@color/black"
+        android:textColor="@color/TextColor"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -94,7 +95,7 @@
         android:background="@drawable/custom_edittext"
         android:fontFamily="@font/baloo"
         android:text="Save"
-        android:textColor="@color/black"
+        android:textColor="@color/TextColor"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,7 +110,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/baloo"
         android:text="xx/xx/xxxx"
-        android:textColor="@color/black"
+        android:textColor="@color/TextColor"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

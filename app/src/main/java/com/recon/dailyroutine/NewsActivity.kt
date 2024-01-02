@@ -96,12 +96,13 @@ class NewsActivity : AppCompatActivity() {
                     newsTitleList[i].text = newsItem.title
                     newsDescList[i].text = newsItem.description
                     newsImgList[i].load(newsItem.imageUrl) {
-                        crossfade(true)
+                        crossfade(false)
                         placeholder(R.drawable.newspaper)
                     }
                     Urls[i] = newsItem.url
                     println("Title: ${newsItem.title}")
                     println("Description: ${newsItem.description}")
+                    println("ImageURL: ${newsItem.imageUrl}")
                     println("URL: ${newsItem.url}")
                     println("Published At: ${newsItem.publishedAt}")
                     println("-------------------------")
@@ -109,17 +110,17 @@ class NewsActivity : AppCompatActivity() {
                 }
             }
         }
-        image1.setOnClickListener{
+        title1.setOnClickListener{
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(this, Uri.parse(Urls[0]))
         }
-        image2.setOnClickListener{
+        title2.setOnClickListener{
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(this, Uri.parse(Urls[1]))
         }
-        image3.setOnClickListener{
+        title3.setOnClickListener{
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(this, Uri.parse(Urls[2]))

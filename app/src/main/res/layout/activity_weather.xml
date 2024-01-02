@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg"
+    android:background="@drawable/bg_weather"
     tools:context=".WeatherActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="TextView"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -74,7 +74,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -96,7 +96,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -118,7 +118,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -140,7 +140,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -162,7 +162,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -184,7 +184,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -206,7 +206,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -228,7 +228,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -250,7 +250,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -272,7 +272,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -294,7 +294,7 @@
                     android:fontFamily="@font/baloo"
                     android:gravity="center_horizontal"
                     android:text="TextView"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -337,7 +337,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -359,7 +359,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -388,7 +388,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -410,7 +410,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/baloo"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -422,7 +422,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="TextView"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

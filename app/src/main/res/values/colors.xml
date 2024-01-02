@@ -15,5 +15,6 @@
     <color name="Gradient2.1">#ff9355</color>
     <color name="Gradient2.2">#ffde77</color>
     <color name="Transparent">#00FFFFFF</color>
+    <color name="TextColor">#FFFFFF</color>
 
 </resources>

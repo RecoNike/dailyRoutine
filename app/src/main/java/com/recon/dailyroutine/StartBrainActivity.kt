@@ -4,9 +4,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
-import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlin.random.Random
 
 class StartBrainActivity : AppCompatActivity() {
@@ -34,13 +33,20 @@ class StartBrainActivity : AppCompatActivity() {
         println("Numbers = $num1   $num2")
         println("Answer = $correctAnswer")
         checkButton.setOnClickListener{
-            if (ansField.text.toString().toInt() == correctAnswer){
-                println("${ansField.text.toString().toInt()}")
-                Toast.makeText(this, "Correct!", LENGTH_SHORT).show()
-                ansField.text.clear()
-                NextMove()
+           if(ansField.text.toString()!="") {
+                if (ansField.text.toString().toInt() == correctAnswer) {
+                    println("${ansField.text.toString().toInt()}")
+                    Snackbar.make(checkButton, "Correct!", Snackbar.LENGTH_SHORT)
+                        .show()
+                    ansField.text.clear()
+                    NextMove()
+                } else {
+                    Snackbar.make(checkButton, "Wrong!", Snackbar.LENGTH_SHORT)
+                        .show()
+                }
             } else {
-                Toast.makeText(this, "Wrong!", LENGTH_SHORT).show()
+                   Snackbar.make(checkButton, "You must write answer", Snackbar.LENGTH_SHORT)
+                       .show()
             }
         }
     }

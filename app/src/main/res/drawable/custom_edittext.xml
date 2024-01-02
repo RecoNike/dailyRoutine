@@ -5,14 +5,14 @@
     android:shape="rectangle" >
 
     <gradient
-    android:startColor="#0099CC"
-    android:endColor="#0099CC"
+    android:startColor="#667B2D90"
+    android:endColor="#80772D8A"
     android:type="linear"
     android:angle="90"/>
 
-    <stroke
-        android:width="3dp"
-        android:color="#99CCFF" />
+<!--    <stroke-->
+<!--        android:width="3dp"-->
+<!--        android:color="#99CCFF" />-->
     <corners
         android:radius="10dp"
         />

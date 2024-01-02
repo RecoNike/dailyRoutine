@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg"
+    android:background="@drawable/bg_meditation"
     tools:context=".MeditationActivity">
 
     <ScrollView
@@ -35,7 +35,7 @@
                     android:drawableLeft="@drawable/lightning"
                     android:fontFamily="@font/baloo"
                     android:text="ENERGY"
-                    android:textColor="@color/black"
+                    android:textColor="@color/TextColor"
                     android:textSize="34sp" />
 
                 <Button
@@ -48,7 +48,7 @@
                     android:fontFamily="@font/baloo"
                     android:paddingLeft="10dp"
                     android:text="RELAX"
-                    android:textColor="@color/black"
+                    android:textColor="@color/TextColor"
                     android:textSize="34sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -61,7 +61,7 @@
                     android:background="@drawable/custom_edittext"
                     android:fontFamily="@font/baloo"
                     android:text="SOON"
-                    android:textColor="@color/black"
+                    android:textColor="@color/TextColor"
                     android:textSize="34sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -70,6 +70,7 @@
                     android:id="@+id/videoView"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
+                    android:layout_margin="15dp"
                     android:layout_weight=".33" />
 
                 <FrameLayout
@@ -91,7 +92,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/montserrat"
         android:text="Choose your meditation goal"
-        android:textColor="@color/black"
+        android:textColor="@color/TextColor"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

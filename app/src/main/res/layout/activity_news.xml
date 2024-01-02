@@ -6,7 +6,7 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg"
+    android:background="@drawable/bg_emotions"
     tools:context=".NewsActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -38,7 +38,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="200dp"
                     android:layout_margin="2dp"
                     android:layout_weight=".3"
                     android:background="@drawable/custom_edittext"
@@ -51,19 +51,18 @@
                         android:id="@+id/titleTv1"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="0.3"
                         android:elevation="2dp"
                         android:fontFamily="@font/baloo"
-                        android:text="TextView"
-                        android:textColor="@color/black"
+                        android:text="Title"
+                        android:textColor="@color/TextColor"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/descripTv1"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="0.3"
-                        android:text="TextView" />
+                        android:text="Description"
+                        android:textColor="@color/TextColor" />
 
                     <ImageView
                         android:id="@+id/newsImg1"
@@ -71,13 +70,15 @@
                         android:layout_height="300dp"
                         android:layout_weight="0.4"
                         android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/BaseBGColor"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/newspaper" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="200dp"
                     android:layout_margin="2dp"
                     android:layout_weight=".3"
                     android:background="@drawable/custom_edittext"
@@ -91,28 +92,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:fontFamily="@font/baloo"
-                        android:text="TextView"
-                        android:textColor="@color/black"
+                        android:text="Title"
+                        android:textColor="@color/TextColor"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/descripTv2"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:text="TextView" />
+                        android:text="Description"
+                        android:textColor="@color/TextColor" />
 
                     <ImageView
                         android:id="@+id/newsImg2"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/BaseBGColor"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/newspaper" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="200dp"
                     android:layout_margin="2dp"
                     android:layout_weight=".3"
                     android:background="@drawable/custom_edittext"
@@ -126,22 +130,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:fontFamily="@font/baloo"
-                        android:text="TextView"
-                        android:textColor="@color/black"
+                        android:text="Title"
+                        android:textColor="@color/TextColor"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/descripTv3"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:text="TextView" />
+                        android:text="Description"
+                        android:textColor="@color/TextColor" />
 
                     <ImageView
                         android:id="@+id/newsImg3"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/BaseBGColor"
+                        android:visibility="invisible"
                         app:srcCompat="@drawable/newspaper" />
                 </LinearLayout>
             </LinearLayout>
